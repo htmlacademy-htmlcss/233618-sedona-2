@@ -2,6 +2,7 @@
 
 * Студент: [Вадим Голубев](https://up.htmlacademy.ru/htmlcss-individual/2/user/233618).
 * Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
+* Сайт: [Мой проект Седона](https://vadikvadik.github.io/233618-sedona-2/).
 
 ---
 
