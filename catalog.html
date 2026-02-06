@@ -11,7 +11,7 @@
         <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-main">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -104,7 +104,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group price-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -121,34 +121,38 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="user-btn apply-btn" type="submit">Применить</button>
-            <button class="user-btn reset-btn" type="reset">Сбросить</button>
+            <div class="filter-buttons">
+              <button class="user-btn apply-btn" type="submit">Применить</button>
+              <button class="user-btn reset-btn" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
       <section class="search-results">
-        <h2 class="search-results-title">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <ul class="view-mode-list">
-          <li class="view-mode-item">
-            <a class="view-mode-link" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-          </li>
-          <li class="view-mode-item">
-            <a class="view-mode-link" href="#">
-              <span class="visually-hidden">Показать слайды</span>
-            </a>
-          </li>
-          <li class="view-mode-item">
-            <a class="view-mode-link" href="#">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-          </li>
-        </ul>
+        <div class="results-sort">
+          <h2 class="search-results-title">Найдено гостиниц: 38</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <ul class="view-mode-list">
+            <li class="view-mode-item">
+              <a class="view-mode-link cards-mode" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+            <li class="view-mode-item">
+              <a class="view-mode-link slider-mode" href="#">
+                <span class="visually-hidden">Показать слайды</span>
+              </a>
+            </li>
+            <li class="view-mode-item">
+              <a class="view-mode-link list-mode" href="#">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="hotel-list">
           <li class="hotel-item">
             <a class="hotel-link" href="#">
@@ -223,7 +227,7 @@
       <section class="subscription subscription-inner">
         <div class="section-head">
           <h2 class="section-title">Подпишитесь на рассылку</h2>
-          <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="section-description">Только полезная информация и никакого спама,</br>честное бойскаутское!</p>
         </div>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Укажите Ваш email</label>
@@ -259,7 +263,7 @@
           <a class="footer-phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
       </section>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="images/html_academy.svg" width="115" height="33" alt="Логотип HTML Academy">
       </a>
     </footer>
