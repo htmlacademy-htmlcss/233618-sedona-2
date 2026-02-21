@@ -235,10 +235,12 @@ img {
   text-align: center;
 }
 
-.hero-intro {
-  background-image: url("../images/hero-background.jpg");
-  background-color: #5383a9;
-  background-size: cover;
+.hero {
+  background-image: url("../images/hero-divider.svg"), url("../images/hero-background.jpg");
+  background-position: bottom, center;
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #e5e5e5;
 }
 
 .hero-image {
@@ -248,22 +250,8 @@ img {
   padding-bottom: 82px;
 }
 
-.hero .section-head {
-  position: relative;
-  background-color: #fff;
-  padding-top: 69px;
-}
-
-.hero .section-head::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 57px;
-  transform: translateY(-100%);
-  top: 1px;
-  background-image: url("../images/hero-divider.svg");
-  background-repeat: no-repeat;
+.advantages .section-head {
+  padding: 69px 20px 91px;
 }
 
 .section-title {
@@ -280,10 +268,6 @@ img {
   font-size: 22px;
   line-height: 26px;
   color: #333;
-}
-
-.hero .section-description {
-  margin-bottom: 90px;
 }
 
 .advantages, .services .section-description {
