@@ -167,7 +167,7 @@ img {
   fill: #756157;
 }
 
-.navigation-user .navigation-link:active .navigation-user-icon {
+.navigation-user-link:active .navigation-user-icon {
   opacity: 0.3;
 }
 
