@@ -751,6 +751,10 @@ img {
   font-size: 18px;
 }
 
+.price-input::placeholder {
+  color: #000;
+}
+
 .price-input:hover {
   background-color: #e5e5e5;
 }
