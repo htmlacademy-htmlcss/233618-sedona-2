@@ -229,21 +229,25 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-form-group date-group">
               <label for="date-in" class="modal-form-title date-group-title">Дата заезда:</label>
-              <input type="text" id="date-in" name="date-in" placeholder="Укажите дату">
+              <input type="text" id="date-in" name="date-in" placeholder="Укажите дату" required>
               <p class="prompt prompt-error">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="modal-form-group date-group">
               <label for="date-out" class="modal-form-title date-group-title">Дата выезда:</label>
-              <input type="text" id="date-out" name="date-out" placeholder="Укажите дату">
+              <input type="text" id="date-out" name="date-out" placeholder="Укажите дату" required>
               <p class="prompt prompt-success">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="amount-groups-container">
               <div class="modal-form-group">
                 <label for="adults-amount" class="modal-form-title">Взрослые:</label>
                 <p class="amount-group">
-                  <button class="amount-minus" type="button"></button>
-                  <input type="number" id="adults-amount" name="adults-amount" min="1" placeholder="1">
-                  <button class="amount-plus" type="button"></button>
+                  <button class="amount-minus" type="button">
+                    <span class="visually-hidden">Плюс один взрослый</span>
+                  </button>
+                  <input type="number" id="adults-amount" name="adults-amount" min="1" placeholder="1" required>
+                  <button class="amount-plus" type="button">
+                    <span class="visually-hidden">Минус один взрослый</span>
+                  </button>
                 </p>
               </div>
               <div class="modal-form-group">
@@ -253,9 +257,13 @@
                   <p class="popover">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                 </div>
                 <p class="amount-group">
-                  <button class="amount-minus" type="button"></button>
+                  <button class="amount-minus" type="button">
+                    <span class="visually-hidden">Плюс один ребенок</span>
+                  </button>
                   <input type="number" id="children-amount" name="children-amount" placeholder="0">
-                  <button class="amount-plus" type="button"></button>
+                  <button class="amount-plus" type="button">
+                    <span class="visually-hidden">Минус один ребенок</span>
+                  </button>
                 </p>
               </div>
             </div>
